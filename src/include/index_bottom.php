@@ -31,7 +31,7 @@
                             <br>
 						  <font size="2" color="#666666">
 							Copyright &copy; 2012, by 
-							<a href="http://www.nikom2532.co.cc">Ming Nikom Suwankamol</a>
+							<a href="http://www.i-ming.com/nikom2532">Arming Huang</a>
 							All rights reserved.
 							<br>
 							i-Ming is a beta version. We will be avalable soon!
@@ -127,6 +127,19 @@
 </div>
 <?php //################################# end for head account ###############################?>
 
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-42040608-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 </body>
 </html>
