@@ -26,7 +26,7 @@ if(($_POST[username]!="")&&($_POST[password]!="")) {
 		echo "<meta http-equiv='refresh' content='0; url=$self'>";
 		
 	} else {
-		echo "<SCRIPT LANGUAGE='JavaScript'>window.alert('¢ÈÕ¡Ÿ≈‡¢È“√–∫∫‰¡Ë∂Ÿ°µÈÕß')</SCRIPT>";
+		echo "<SCRIPT LANGUAGE='JavaScript'>window.alert('‡∏Ç‡πâ‡∏≠‡∏°‡∏π‡∏•‡πÄ‡∏Ç‡πâ‡∏≤‡∏£‡∏∞‡∏ö‡∏ö‡πÑ‡∏°‡πà‡∏ñ‡∏π‡∏Å‡∏ï‡πâ‡∏≠‡∏á')</SCRIPT>";
 		echo "<meta http-equiv='refresh' content='0; url=$self'>";
 	}
 }                   

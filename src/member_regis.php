@@ -35,37 +35,37 @@ if($flag=="ok") {
 	$msg_warn="";
 
 	if((strlen($username)<4)||(strlen($username)>15)) {
-		$msg_warn.="<br>°√ÿ≥“„ Ë username 4-15 µ—«Õ—°…√";
+		$msg_warn.="<br>‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡πÉ‡∏™‡πà username 4-15 ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£";
 	} else {
 		if(ereg("[^-|_|0-9a-zA-Z]",$username)) {
-			$msg_warn= "<br>username  “¡“√∂„™Èµ—«Õ—°…√‰¥È·§Ë a-z , A-Z, 0-9, - , _";
+			$msg_warn= "<br>username ‡∏™‡∏≤‡∏°‡∏≤‡∏£‡∏ñ‡πÉ‡∏ä‡πâ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£‡πÑ‡∏î‡πâ‡πÅ‡∏Ñ‡πà a-z , A-Z, 0-9, - , _";
 		}
 		$SQL1="select username from social_iMing_customer_v3 where username='$username'";
 		$result1=mysql_query($SQL1);
 		if(mysql_num_rows($result1)>0) {
-			$msg_warn.="<br>username : $username ¡’ºŸÈÕ◊Ëπ„™È·≈È«";
+			$msg_warn.="<br>username : $username ‡∏°‡∏µ‡∏ú‡∏π‡πâ‡∏≠‡∏∑‡πà‡∏ô‡πÉ‡∏ä‡πâ‡πÅ‡∏•‡πâ‡∏ß";
 		}
 	}
 	if($pass1!=$pass2) {
-		$warning= "<br>password 2 ™ËÕß ®–µÈÕß‡À¡◊Õπ°—π";
+		$warning= "<br>password 2 ‡∏ä‡πà‡∏≠‡∏á ‡∏à‡∏∞‡∏ï‡πâ‡∏≠‡∏á‡πÄ‡∏´‡∏°‡∏∑‡∏≠‡∏ô‡∏Å‡∏±‡∏ô";
 	} 
 	if((strlen($pass1)<4)||(strlen($pass1)>15)) {
-		$warning= "<br>password ®–µÈÕß¡’¢π“¥ 4-15 µ—«Õ—°…√";
+		$warning= "<br>password ‡∏à‡∏∞‡∏ï‡πâ‡∏≠‡∏á‡∏°‡∏µ‡∏Ç‡∏ô‡∏≤‡∏î 4-15 ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£";
 	} 
 	if(ereg("[^-|_|0-9a-zA-Z]",$pass1)) {
-		$warning= "<br>password  “¡“√∂„™Èµ—«Õ—°…√‰¥È·§Ë a-z , A-Z, 0-9, - , _";
+		$warning= "<br>password ‡∏™‡∏≤‡∏°‡∏≤‡∏£‡∏ñ‡πÉ‡∏ä‡πâ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£‡πÑ‡∏î‡πâ‡πÅ‡∏Ñ‡πà a-z , A-Z, 0-9, - , _";
 	}
 	if(empty($name)) {
-		$msg_warn.="<br>°√ÿ≥“√–∫ÿ ™◊ËÕ-π“¡ °ÿ≈ ¥È«¬";
+		$msg_warn.="<br>‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏£‡∏∞‡∏ö‡∏∏ ‡∏ä‡∏∑‡πà‡∏≠-‡∏ô‡∏≤‡∏°‡∏™‡∏Å‡∏∏‡∏• ‡∏î‡πâ‡∏ß‡∏¢";
 	}
 	if(empty($sex)) {
-		$msg_warn.="<br>°√ÿ≥“‡≈◊Õ° ‡æ» ¥È«¬";
+		$msg_warn.="<br>‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡πÄ‡∏•‡∏∑‡∏≠‡∏Å ‡πÄ‡∏û‡∏® ‡∏î‡πâ‡∏ß‡∏¢";
 	}
 	if(empty($email)) {
-		$msg_warn.="<br>°√ÿ≥“√–∫ÿÕ’‡¡≈Ï";
+		$msg_warn.="<br>‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏£‡∏∞‡∏ö‡∏∏‡∏≠‡∏µ‡πÄ‡∏°‡∏•‡πå";
 	}
 	if(empty($address)) {
-		$msg_warn.="<br>°√ÿ≥“√–∫ÿ∑’ËÕ¬ŸË";
+		$msg_warn.="<br>‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏£‡∏∞‡∏ö‡∏∏‡∏ó‡∏µ‡πà‡∏≠‡∏¢‡∏π‡πà";
 	}
 	if($msg_warn=="") {
 
@@ -184,13 +184,13 @@ body {
 
                                         <TR> 
                                           <TD class="bkheadnor"><FONT 
-        color=#cc0000><U>À¡“¬‡Àµÿ</U></FONT></TD>
+        color=#cc0000><U>‡∏´‡∏°‡∏≤‡∏¢‡πÄ‡∏´‡∏ï‡∏∏</U></FONT></TD>
                                         </TR>
                                         <TR> 
                                           <TD class=body> <P class="nortxt"> 
-                                              °√ÿ≥“°√Õ°¢ÈÕ¡Ÿ≈„π™ËÕß∑’Ë¡’‡§√◊ËÕßÀ¡“¬ 
+                                              ‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏Å‡∏£‡∏≠‡∏Å‡∏Ç‡πâ‡∏≠‡∏°‡∏π‡∏•‡πÉ‡∏ô‡∏ä‡πà‡∏≠‡∏á‡∏ó‡∏µ‡πà‡∏°‡∏µ‡πÄ‡∏Ñ‡∏£‡∏∑‡πà‡∏≠‡∏á‡∏´‡∏°‡∏≤‡∏¢ 
                                               <FONT 
-            color=#cc0000>*</FONT> °Ì“°—∫Õ¬ŸË„ÀÈ§√∫∂È«π ¡∫Ÿ√≥Ï ‡æ◊ËÕ§«“¡ –¥«°¢Õß ¡“™‘°„π°“√„™È∫√‘°“√ 
+            color=#cc0000>*</FONT> ‡∏Å‡πç‡∏≤‡∏Å‡∏±‡∏ö‡∏≠‡∏¢‡∏π‡πà‡πÉ‡∏´‡πâ‡∏Ñ‡∏£‡∏ö‡∏ñ‡πâ‡∏ß‡∏ô‡∏™‡∏°‡∏ö‡∏π‡∏£‡∏ì‡πå ‡πÄ‡∏û‡∏∑‡πà‡∏≠‡∏Ñ‡∏ß‡∏≤‡∏°‡∏™‡∏∞‡∏î‡∏ß‡∏Å‡∏Ç‡∏≠‡∏á‡∏™‡∏°‡∏≤‡∏ä‡∏¥‡∏Å‡πÉ‡∏ô‡∏Å‡∏≤‡∏£‡πÉ‡∏ä‡πâ‡∏ö‡∏£‡∏¥‡∏Å‡∏≤‡∏£ 
                                        
                                               <BR>
                                               <BR>
@@ -211,7 +211,7 @@ body {
 
 					<table width="580" border="0" cellspacing="0" cellpadding="0" align="center">
                     <tr> 
-                      <td height="24" bgcolor="b0eef9" class="btxt" align="center"><b>·∫∫øÕ√Ï¡ ¡—§√ ¡“™‘°</b></td>
+                      <td height="24" bgcolor="b0eef9" class="btxt" align="center"><b>‡πÅ‡∏ö‡∏ö‡∏ü‡∏≠‡∏£‡πå‡∏°‡∏™‡∏°‡∏±‡∏Ñ‡∏£‡∏™‡∏°‡∏≤‡∏ä‡∏¥‡∏Å</b></td>
                     </tr>
 					</table>
 
@@ -220,19 +220,19 @@ body {
 	{
 		if((myForm.username.value.length<4) || (myForm.username.value.length>15))
 		{
-			alert('™◊ËÕ‡¢È“√–∫∫®–µÈÕß¬“« 4-15 µ—«Õ—°…√§Ë–');
+			alert('‡∏ä‡∏∑‡πà‡∏≠‡πÄ‡∏Ç‡πâ‡∏≤‡∏£‡∏∞‡∏ö‡∏ö‡∏à‡∏∞‡∏ï‡πâ‡∏≠‡∏á‡∏¢‡∏≤‡∏ß 4-15 ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£‡∏Ñ‡πà‡∏∞');
 			myForm.username.focus();
 			return(false);
 		}
 		if((myForm.pass1.value.length<4) || (myForm.pass1.value.length>15))
 		{
-			alert('√À— ºË“πµÈÕß¡’¢π“¥ 4-15 µ—«Õ—°…√§Ë–');
+			alert('‡∏£‡∏´‡∏±‡∏™‡∏ú‡πà‡∏≤‡∏ô‡∏ï‡πâ‡∏≠‡∏á‡∏°‡∏µ‡∏Ç‡∏ô‡∏≤‡∏î 4-15 ‡∏ï‡∏±‡∏ß‡∏≠‡∏±‡∏Å‡∏©‡∏£‡∏Ñ‡πà‡∏∞');
 			myForm.pass1.focus();
 			return(false);
 		}
 		if(myForm.pass1.value!=myForm.pass2.value)
 		{
-			alert('√À— ºË“π 2 ™ËÕß‰¡Ëµ√ß°—π§Ë–');
+			alert('‡∏£‡∏´‡∏±‡∏™‡∏ú‡πà‡∏≤‡∏ô 2 ‡∏ä‡πà‡∏≠‡∏á‡πÑ‡∏°‡πà‡∏ï‡∏£‡∏á‡∏Å‡∏±‡∏ô‡∏Ñ‡πà‡∏∞');
 			myForm.pass1.focus();
 			return(false);
 		}
@@ -240,7 +240,7 @@ body {
 
 		if(myForm.name.value.length<1)
 		{
-			alert('°√ÿ≥“°√Õ°™◊ËÕ-π“¡ °ÿ≈¢Õß∑Ë“π¥È«¬§Ë–');
+			alert('‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏Å‡∏£‡∏≠‡∏Å‡∏ä‡∏∑‡πà‡∏≠-‡∏ô‡∏≤‡∏°‡∏™‡∏Å‡∏∏‡∏•‡∏Ç‡∏≠‡∏á‡∏ó‡πà‡∏≤‡∏ô‡∏î‡πâ‡∏ß‡∏¢‡∏Ñ‡πà‡∏∞');
 			myForm.name.focus();
 			return(false);
 		}
@@ -248,7 +248,7 @@ body {
 
 		if((!myForm.sex[0].checked)&&(!myForm.sex[1].checked))
 		{
-			alert('°√ÿ≥“‡≈◊Õ°‡æ»¥È«¬§Ë–');
+			alert('‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡πÄ‡∏•‡∏∑‡∏≠‡∏Å‡πÄ‡∏û‡∏®‡∏î‡πâ‡∏ß‡∏¢‡∏Ñ‡πà‡∏∞');
 			return(false);
 		}
 
@@ -264,13 +264,13 @@ body {
 			}
 			if (!Valid)
 			{
-					alert("°√ÿ≥“„ ËÕ’‡¡≈Ï∑’Ë∂Ÿ°µÈÕß¥È«¬§Ë–");
+					alert("‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡πÉ‡∏™‡πà‡∏≠‡∏µ‡πÄ‡∏°‡∏•‡πå‡∏ó‡∏µ‡πà‡∏ñ‡∏π‡∏Å‡∏ï‡πâ‡∏≠‡∏á‡∏î‡πâ‡∏ß‡∏¢‡∏Ñ‡πà‡∏∞");
 					myForm.email.focus();
 					return (false);
 			}
 		if(myForm.address.value.length<1)
 		{
-			alert('°√ÿ≥“°√Õ°∑’ËÕ¬ŸË¥È«¬§Ë–');
+			alert('‡∏Å‡∏£‡∏∏‡∏ì‡∏≤‡∏Å‡∏£‡∏≠‡∏Å‡∏ó‡∏µ‡πà‡∏≠‡∏¢‡∏π‡πà‡∏î‡πâ‡∏ß‡∏¢‡∏Ñ‡πà‡∏∞');
 			myForm.address.focus();
 			return(false);
 		}

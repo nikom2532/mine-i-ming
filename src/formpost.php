@@ -30,7 +30,7 @@ if($_SESSION[su]=="") {
 
 echo "<br><br><br><table width='700'  border='0' cellspacing='2' cellpadding='0' align='center'>
 		   <tr class='nortxt'>
-		   <td align='center'><font color='FF0000'>��س� Login ���ǹ�ͧ��Ҫԡ��͹���е�駡�з����</font></td>
+		   <td align='center'><font color='FF0000'>กรุณา Login ในส่วนของสมาชิกก่อนที่จะตั้งกระทู้ได้</font></td>
 		   </tr>
 		 </table><br><br>";
 
@@ -40,15 +40,15 @@ if($flag=="ok") {
 	$msg_warn="";
 
 	if(empty($wp_topic)) {
-		$msg_warn.="<br>��س��к���Ǣ�͡�з�����";
+		$msg_warn.="<br>กรุณาระบุหัวข้อกระทู้ด้วย";
 	}
 
 	if(empty($wp_detail)) {
-		$msg_warn.="<br>��سҾ������������´����";
+		$msg_warn.="<br>กรุณาพิมพ์รายละเอียดด้วย";
 	}
 
 	if(empty($wp_name)) {
-		$msg_warn.="<br>��س�ŧ���ͧ͢�س����";
+		$msg_warn.="<br>กรุณาลงชื่อของคุณด้วย";
 	}
 
 
@@ -92,7 +92,7 @@ if($flag=="ok") {
                             <td height="20">
                                 <table width="98%"  border="0" cellspacing="0" cellpadding="0">
                                   <tr class="nortxt"> 
-                                    <td height="20" bgcolor="222222" align="center"><b>��駡�з��</b></td>
+                                    <td height="20" bgcolor="222222" align="center"><b>ตั้งกระทู้</b></td>
                                   </tr>
                                 </table>
                                </td>
@@ -105,14 +105,14 @@ if($flag=="ok") {
                                 <table width="80%" border="0" cellspacing="3" cellpadding="0" align="center">
 								  <tr class="nortxt"> 
 										 <td><b>
-										 ��Ǣ�͡�з��</b></td>
+										 หัวข้อกระทู้</b></td>
 										 <td> 
 											<input type="text" name="wp_topic" class="nortxt" size="60" maxlength="150" value="<?=$wp_topic?>"> <font color="FF0000">*</font>
 										  </td>
 								  </tr>
 								  <tr class="nortxt" bgcolor="111111"> 
 										 <td><b>
-										 ��������´ </b></td>
+										 รายละเอียด </b></td>
 										 <td>
 											<textarea name="wp_detail" id="wp_detail" rows="6" cols="60"><?=$wp_detail?></textarea>
 											<font color="FF0000">*</font>
@@ -120,7 +120,7 @@ if($flag=="ok") {
 								   </tr>
 								  <tr class="nortxt"> 
 										 <td><b>
-										 �ҡ�س </b></td>
+										 จากคุณ </b></td>
 										 <td>
 											<input type="text" name="wp_name" size="20" maxlength="100" value="<?=$wp_name?>"> (<?=$_SESSION[su]?>)<font color="FF0000">*</font>
 										 </td>
