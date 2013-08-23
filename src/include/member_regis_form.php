@@ -56,7 +56,7 @@
 <?php /*
                                   <tr class="nortxt"> 
                                     <td><b>
-                                        ���ʡ�� </b></td>
+                                        ๏ฟฝ๏ฟฝ๏ฟฝสก๏ฟฝ๏ฟฝ </b></td>
                                     <td>
                                         <input name="lastname" type="text" class="nortxt" size="30" value="<?=$lastname?>" maxlength="50"> <font color="FF0000">*</font>
                                       </td>
@@ -71,7 +71,7 @@
                                   </tr>
 <?php /*                                  <tr class="nortxt"> 
                                     <td><b>
-                                        �Ţ�ѵû�ЪҪ�</b></td>
+                                        ๏ฟฝลข๏ฟฝัตรป๏ฟฝะชาช๏ฟฝ</b></td>
                                     <td>
                                         <input name="nation_id" type="text" class="nortxt" size="30" value="<?=$nation_id?>" maxlength="14">
                                       </td>
@@ -156,7 +156,7 @@
                                   </tr>
 <?php /*                                  <tr class="nortxt" bgcolor="111111"> 
                                     <td><b>
-                                        ���Ѿ��</b></td>
+                                        ๏ฟฝ๏ฟฝ๏ฟฝัพ๏ฟฝ๏ฟฝ</b></td>
                                     <td>
                                         <input name="phone" type="text" class="nortxt" size="30" value="<?=$phone?>" maxlength="30"><font color="FF0000">*</font>
                                       </td>
@@ -171,20 +171,20 @@
                                   </tr>
 <?php /*                                  <tr class="nortxt" bgcolor="111111"> 
                                     <td><b>
-                                        �Ҫվ </b></td>
+                                        ๏ฟฝาชีพ </b></td>
                                     <td>
 								  <select name="occupation">
-									<option>  -- ���͡�Ҫվ --  </option>
-									<option value="�ѡ���¹" <? if($occupation=="�ѡ���¹") echo "selected"; ?>>�ѡ���¹</option>
-									<option value="���Ե/�ѡ�֡��" <? if($occupation=="���Ե/�ѡ�֡��") echo "selected"; ?>>���Ե/�ѡ�֡��</option>
-									<option  value="��ѡ�ҹ����ѷ" <? if($occupation=="��ѡ�ҹ����ѷ") echo "selected"; ?>>��ѡ�ҹ����ѷ</option>
-									<option value="��ѡ�ҹ�Ѱ����ˡԨ" <? if($occupation=="��ѡ�ҹ�Ѱ����ˡԨ") echo "selected"; ?>>��ѡ�ҹ�Ѱ����ˡԨ</option>
-									<option value="����Ҫ���" <? if($occupation=="����Ҫ���") echo "selected"; ?>>����Ҫ���</option>
-									<option value="���/����ҹ" <? if($occupation=="���/����ҹ") echo "selected"; ?>>���/����ҹ</option>
-									<option value="��Ңͧ�Ԩ���" <? if($occupation=="��Ңͧ�Ԩ���") echo "selected"; ?>>��Ңͧ�Ԩ���</option>
-									<option value="���³" <? if($occupation=="���³") echo "selected"; ?>>���³</option>
-									<option value="�����ӧҹ" <? if($occupation=="�����ӧҹ") echo "selected"; ?>>�����ӧҹ</option>
-									<option value="����" <? if($occupation=="����") echo "selected"; ?>>����</option>
+									<option>  -- ๏ฟฝ๏ฟฝ๏ฟฝอก๏ฟฝาชีพ --  </option>
+									<option value="๏ฟฝัก๏ฟฝ๏ฟฝ๏ฟฝยน" <? if($occupation=="๏ฟฝัก๏ฟฝ๏ฟฝ๏ฟฝยน") echo "selected"; ?>>๏ฟฝัก๏ฟฝ๏ฟฝ๏ฟฝยน</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝิต/๏ฟฝัก๏ฟฝึก๏ฟฝ๏ฟฝ" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝิต/๏ฟฝัก๏ฟฝึก๏ฟฝ๏ฟฝ") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝิต/๏ฟฝัก๏ฟฝึก๏ฟฝ๏ฟฝ</option>
+									<option  value="๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝัท" <? if($occupation=="๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝัท") echo "selected"; ?>>๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝัท</option>
+									<option value="๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝัฐ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝหกิจ" <? if($occupation=="๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝัฐ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝหกิจ") echo "selected"; ?>>๏ฟฝ๏ฟฝัก๏ฟฝาน๏ฟฝัฐ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝหกิจ</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาช๏ฟฝ๏ฟฝ๏ฟฝ" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาช๏ฟฝ๏ฟฝ๏ฟฝ") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาช๏ฟฝ๏ฟฝ๏ฟฝ</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝ/๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาน" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝ/๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาน") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝ/๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝาน</option>
+									<option value="๏ฟฝ๏ฟฝาของ๏ฟฝิจ๏ฟฝ๏ฟฝ๏ฟฝ" <? if($occupation=="๏ฟฝ๏ฟฝาของ๏ฟฝิจ๏ฟฝ๏ฟฝ๏ฟฝ") echo "selected"; ?>>๏ฟฝ๏ฟฝาของ๏ฟฝิจ๏ฟฝ๏ฟฝ๏ฟฝ</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝยณ" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝยณ") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝยณ</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝำงาน" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝำงาน") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝำงาน</option>
+									<option value="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ" <? if($occupation=="๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ") echo "selected"; ?>>๏ฟฝ๏ฟฝ๏ฟฝ๏ฟฝ</option>
 								  </select> <font color="FF0000">*</font>
 									</td>
                                   </tr>
