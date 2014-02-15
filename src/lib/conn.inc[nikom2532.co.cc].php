@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 i-ming.co.cc
 Created: Dec 13, 2011

@@ -1,4 +1,4 @@
-<?
+<?php
 /*
 nikom2532.co.cc
 Created: Oct 14, 2011

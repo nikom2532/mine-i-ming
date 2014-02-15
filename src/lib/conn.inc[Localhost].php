@@ -1,4 +1,4 @@
-<?
+<?php
 	  $db=new DB('localhost','iming','iming','i-Ming');
 	  //$db->open();
 	  //$db->query("");

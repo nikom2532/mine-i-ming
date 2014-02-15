@@ -1,5 +1,5 @@
-<?
-	  $db=new DB('localhost','iming','iming','i-Ming');
+<?php
+	  $db=new DB('localhost','iming','iming','iming');
 	  //$db->open();
 	  //$db->query("");
 	  //$result = $db->fetchArray();

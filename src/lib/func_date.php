@@ -1,4 +1,4 @@
-<?
+<?php
 function mydatetime($date_value){
 		if ($date_value){
 			$x=substr($date_value,0,10);
@@ -12,21 +12,21 @@ function thaidatetime($date_value){
 		if ($date_value){
 			$x=substr($date_value,0,10);
 			$arr=split("-",$x);
-			$month[1]="Á¡ÃÒ¤Á";
-			$month[2]="¡ØÁÀÒ¾Ñ¹¸ì";
-			$month[3]="ÁÕ¹Ò¤Á";
-			$month[4]="àÁÉÒÂ¹";
-			$month[5]="¾ÄÉÀÒ¤Á";
-			$month[6]="ÁÔ¶Ø¹ÒÂ¹";
-			$month[7]="¡Ã¡®Ò¤Á";
-			$month[8]="ÊÔ§ËÒ¤Á";
-			$month[9]="¡Ñ¹ÂÒÂ¹";
-			$month[10]="µØÅÒ¤Á";
-			$month[11]="¾ÄÈ¨Ô¡ÒÂ¹";
-			$month[12]="¸Ñ¹ÇÒ¤Á";
+			$month[1]="ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[2]="ï¿½ï¿½ï¿½ï¿½Ò¾Ñ¹ï¿½ï¿½";
+			$month[3]="ï¿½Õ¹Ò¤ï¿½";
+			$month[4]="ï¿½ï¿½ï¿½ï¿½Â¹";
+			$month[5]="ï¿½ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[6]="ï¿½Ô¶Ø¹ï¿½Â¹";
+			$month[7]="ï¿½Ã¡ï¿½Ò¤ï¿½";
+			$month[8]="ï¿½Ô§ï¿½Ò¤ï¿½";
+			$month[9]="ï¿½Ñ¹ï¿½ï¿½Â¹";
+			$month[10]="ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[11]="ï¿½ï¿½È¨Ô¡ï¿½Â¹";
+			$month[12]="ï¿½Ñ¹ï¿½Ò¤ï¿½";
 			$yyyy=$arr[0]+543;
 
-			$myformat=number_format($arr[2])." ".$month[number_format($arr[1])]." ".$yyyy." ".number_format(substr($date_value,11,2)).substr($date_value,13,3)." ¹.";
+			$myformat=number_format($arr[2])." ".$month[number_format($arr[1])]." ".$yyyy." ".number_format(substr($date_value,11,2)).substr($date_value,13,3)." ï¿½.";
 		}
 
 return $myformat;
@@ -36,18 +36,18 @@ function thaidate($date_value){
 		if ($date_value){
 			$x=substr($date_value,0,10);
 			$arr=split("-",$x);
-			$month[1]="Á¡ÃÒ¤Á";
-			$month[2]="¡ØÁÀÒ¾Ñ¹¸ì";
-			$month[3]="ÁÕ¹Ò¤Á";
-			$month[4]="àÁÉÒÂ¹";
-			$month[5]="¾ÄÉÀÒ¤Á";
-			$month[6]="ÁÕ¶Ø¹ÒÂ¹";
-			$month[7]="¡Ã¡®Ò¤Á";
-			$month[8]="ÊÔ§ËÒ¤Á";
-			$month[9]="¡Ñ¹ÂÒÂ¹";
-			$month[10]="µØÅÒ¤Á";
-			$month[11]="¾ÄÈ¨Ô¡ÒÂ¹";
-			$month[12]="¸Ñ¹ÇÒ¤Á";
+			$month[1]="ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[2]="ï¿½ï¿½ï¿½ï¿½Ò¾Ñ¹ï¿½ï¿½";
+			$month[3]="ï¿½Õ¹Ò¤ï¿½";
+			$month[4]="ï¿½ï¿½ï¿½ï¿½Â¹";
+			$month[5]="ï¿½ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[6]="ï¿½Õ¶Ø¹ï¿½Â¹";
+			$month[7]="ï¿½Ã¡ï¿½Ò¤ï¿½";
+			$month[8]="ï¿½Ô§ï¿½Ò¤ï¿½";
+			$month[9]="ï¿½Ñ¹ï¿½ï¿½Â¹";
+			$month[10]="ï¿½ï¿½ï¿½Ò¤ï¿½";
+			$month[11]="ï¿½ï¿½È¨Ô¡ï¿½Â¹";
+			$month[12]="ï¿½Ñ¹ï¿½Ò¤ï¿½";
 			$yyyy=$arr[0]+543;
 
 			$myformat=number_format($arr[2])." ".$month[number_format($arr[1])]." ".$yyyy;
