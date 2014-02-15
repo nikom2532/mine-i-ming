@@ -1,4 +1,4 @@
-<?
+<?php
 $rootpath ="";
 session_start();
 require_once($rootpath."lib/func_date.php");
@@ -11,7 +11,7 @@ $focus=3;
 include($rootpath."include/index_head.php");
 ?>
 <meta http-equiv="Content-Type" content="text/html; charset=windows-874">
-<?
+<?php
 
 echo "
 <table width='850' border='0' align='center' cellpadding='0' cellspacing='0'>
@@ -135,7 +135,7 @@ if($flag=="ok") {
 								  </td></tr></table>
 
 
-<?
+<?php
 } // end session username check
 echo "
 		</td>

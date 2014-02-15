@@ -26,7 +26,7 @@ body {
       <tr > 
          <td height='30' bgcolor="000000"><table width='100%' border='0' cellspacing='0' cellpadding='0'>
       <tr>
-<?
+<?php
 if($_SESSION[su]!="") {
 	echo "  <td class='nortxt' align='center'><b>�Թ�յ�͹�Ѻ�س</b> <img src='".$rootpath."images/arr.gif' width='12' height='8'> $_SESSION[su]  </td><td class='wlink' align='center'> <a href='".$rootpath."member_edit.php'>��䢢�����/����¹���ʼ�ҹ</a> </td><td class='nortxt' align='center'> <a href='".$rootpath."logout.php'><img src='".$rootpath."images/bu_log2.gif' width='53' height='19' border='0'></a></td>";
 } else {
@@ -65,7 +65,7 @@ if($_SESSION[su]!="") {
 <table width='900' border='0' align='center' cellpadding='0' cellspacing='0' bgcolor='222222'>
 <tr height="30">
 <td width="100"></td>
-<?
+<?php
 $arr_text=array("Member Manage","Question Manage","Other Config");
 $arr_link=array($rootpath."admin/index.php",$rootpath."admin/question.php",$rootpath."admin/other.php");
 

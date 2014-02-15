@@ -13,12 +13,12 @@
                                     <td width="30%"><b>
                                         Username</b></td>
                                     <td> 
-<? if (ereg("member_edit",$GLOBALS[REQUEST_URI], $array)) {
+<?php if (ereg("member_edit",$GLOBALS[REQUEST_URI], $array)) {
 			echo $_SESSION[su];
 } else {
 ?>
                                         <input name="username" type="text" class="nortxt" size="20"maxlength="15" value="<?=$username?>"> <font color="FF0000">*</font>
-<? } ?>
+<?php } ?>
                                       </td>
                                   </tr>
                                   <tr class="nortxt" bgcolor="85d9e8"> 
@@ -82,56 +82,56 @@
                                         Birthdate </b></td>
                                     <td>Date
 								  <select name="birth_date">
-									<option value="1" <? if($birth_date=="1") echo "selected"; ?>>1</option>
-									<option value="2" <? if($birth_date=="2") echo "selected"; ?>>2</option>
-									<option value="3" <? if($birth_date=="3") echo "selected"; ?>>3</option>
-									<option value="4" <? if($birth_date=="4") echo "selected"; ?>>4</option>
-									<option value="5" <? if($birth_date=="5") echo "selected"; ?>>5</option>
-									<option value="6" <? if($birth_date=="6") echo "selected"; ?>>6</option>
-									<option value="7" <? if($birth_date=="7") echo "selected"; ?>>7</option>
-									<option value="8" <? if($birth_date=="8") echo "selected"; ?>>8</option>
-									<option value="9" <? if($birth_date=="9") echo "selected"; ?>>9</option>
-									<option value="10" <? if($birth_date=="10") echo "selected"; ?>>10</option>
-									<option value="11" <? if($birth_date=="11") echo "selected"; ?>>11</option>
-									<option value="12" <? if($birth_date=="12") echo "selected"; ?>>12</option>
-									<option value="13" <? if($birth_date=="13") echo "selected"; ?>>13</option>
-									<option value="14" <? if($birth_date=="14") echo "selected"; ?>>14</option>
-									<option value="15" <? if($birth_date=="15") echo "selected"; ?>>15</option>
-									<option value="16" <? if($birth_date=="16") echo "selected"; ?>>16</option>
-									<option value="17" <? if($birth_date=="17") echo "selected"; ?>>17</option>
-									<option value="18" <? if($birth_date=="18") echo "selected"; ?>>18</option>
-									<option value="19" <? if($birth_date=="19") echo "selected"; ?>>19</option>
-									<option value="20" <? if($birth_date=="20") echo "selected"; ?>>20</option>
-									<option value="21" <? if($birth_date=="21") echo "selected"; ?>>21</option>
-									<option value="22" <? if($birth_date=="22") echo "selected"; ?>>22</option>
-									<option value="23" <? if($birth_date=="23") echo "selected"; ?>>23</option>
-									<option value="24" <? if($birth_date=="24") echo "selected"; ?>>24</option>
-									<option value="25" <? if($birth_date=="25") echo "selected"; ?>>25</option>
-									<option value="26" <? if($birth_date=="26") echo "selected"; ?>>26</option>
-									<option value="27" <? if($birth_date=="27") echo "selected"; ?>>27</option>
-									<option value="28" <? if($birth_date=="28") echo "selected"; ?>>28</option>
-									<option value="29" <? if($birth_date=="29") echo "selected"; ?>>29</option>
-									<option value="30" <? if($birth_date=="30") echo "selected"; ?>>30</option>
-									<option value="31" <? if($birth_date=="31") echo "selected"; ?>>31</option>
+									<option value="1" <?php if($birth_date=="1") echo "selected"; ?>>1</option>
+									<option value="2" <?php if($birth_date=="2") echo "selected"; ?>>2</option>
+									<option value="3" <?php if($birth_date=="3") echo "selected"; ?>>3</option>
+									<option value="4" <?php if($birth_date=="4") echo "selected"; ?>>4</option>
+									<option value="5" <?php if($birth_date=="5") echo "selected"; ?>>5</option>
+									<option value="6" <?php if($birth_date=="6") echo "selected"; ?>>6</option>
+									<option value="7" <?php if($birth_date=="7") echo "selected"; ?>>7</option>
+									<option value="8" <?php if($birth_date=="8") echo "selected"; ?>>8</option>
+									<option value="9" <?php if($birth_date=="9") echo "selected"; ?>>9</option>
+									<option value="10" <?php if($birth_date=="10") echo "selected"; ?>>10</option>
+									<option value="11" <?php if($birth_date=="11") echo "selected"; ?>>11</option>
+									<option value="12" <?php if($birth_date=="12") echo "selected"; ?>>12</option>
+									<option value="13" <?php if($birth_date=="13") echo "selected"; ?>>13</option>
+									<option value="14" <?php if($birth_date=="14") echo "selected"; ?>>14</option>
+									<option value="15" <?php if($birth_date=="15") echo "selected"; ?>>15</option>
+									<option value="16" <?php if($birth_date=="16") echo "selected"; ?>>16</option>
+									<option value="17" <?php if($birth_date=="17") echo "selected"; ?>>17</option>
+									<option value="18" <?php if($birth_date=="18") echo "selected"; ?>>18</option>
+									<option value="19" <?php if($birth_date=="19") echo "selected"; ?>>19</option>
+									<option value="20" <?php if($birth_date=="20") echo "selected"; ?>>20</option>
+									<option value="21" <?php if($birth_date=="21") echo "selected"; ?>>21</option>
+									<option value="22" <?php if($birth_date=="22") echo "selected"; ?>>22</option>
+									<option value="23" <?php if($birth_date=="23") echo "selected"; ?>>23</option>
+									<option value="24" <?php if($birth_date=="24") echo "selected"; ?>>24</option>
+									<option value="25" <?php if($birth_date=="25") echo "selected"; ?>>25</option>
+									<option value="26" <?php if($birth_date=="26") echo "selected"; ?>>26</option>
+									<option value="27" <?php if($birth_date=="27") echo "selected"; ?>>27</option>
+									<option value="28" <?php if($birth_date=="28") echo "selected"; ?>>28</option>
+									<option value="29" <?php if($birth_date=="29") echo "selected"; ?>>29</option>
+									<option value="30" <?php if($birth_date=="30") echo "selected"; ?>>30</option>
+									<option value="31" <?php if($birth_date=="31") echo "selected"; ?>>31</option>
 								</select>
 								Month
 								  <select name="birth_month">
-									<option value="1" <? if($birth_date=="1") echo "selected"; ?>>Jan</option>
-									<option value="2" <? if($birth_date=="2") echo "selected"; ?>>Feb</option>
-									<option value="3" <? if($birth_date=="3") echo "selected"; ?>>Mar</option>
-									<option value="4" <? if($birth_date=="4") echo "selected"; ?>>Apr</option>
-									<option value="5" <? if($birth_date=="5") echo "selected"; ?>>May</option>
-									<option value="6" <? if($birth_date=="6") echo "selected"; ?>>Jun</option>
-									<option value="7" <? if($birth_date=="7") echo "selected"; ?>>Jul</option>
-									<option value="8" <? if($birth_date=="8") echo "selected"; ?>>Aug</option>
-									<option value="9" <? if($birth_date=="9") echo "selected"; ?>>Sep</option>
-									<option value="10" <? if($birth_date=="10") echo "selected"; ?>>Oct</option>
-									<option value="11" <? if($birth_date=="11") echo "selected"; ?>>Nov</option>
-									<option value="12" <? if($birth_date=="12") echo "selected"; ?>>Dec</option>
+									<option value="1" <?php if($birth_date=="1") echo "selected"; ?>>Jan</option>
+									<option value="2" <?php if($birth_date=="2") echo "selected"; ?>>Feb</option>
+									<option value="3" <?php if($birth_date=="3") echo "selected"; ?>>Mar</option>
+									<option value="4" <?php if($birth_date=="4") echo "selected"; ?>>Apr</option>
+									<option value="5" <?php if($birth_date=="5") echo "selected"; ?>>May</option>
+									<option value="6" <?php if($birth_date=="6") echo "selected"; ?>>Jun</option>
+									<option value="7" <?php if($birth_date=="7") echo "selected"; ?>>Jul</option>
+									<option value="8" <?php if($birth_date=="8") echo "selected"; ?>>Aug</option>
+									<option value="9" <?php if($birth_date=="9") echo "selected"; ?>>Sep</option>
+									<option value="10" <?php if($birth_date=="10") echo "selected"; ?>>Oct</option>
+									<option value="11" <?php if($birth_date=="11") echo "selected"; ?>>Nov</option>
+									<option value="12" <?php if($birth_date=="12") echo "selected"; ?>>Dec</option>
 								</select>
 								Year
 								  <select name="birth_year">
-								  <?
+								  <?php
 								  $date=getdate();
 								  for($x=0;$x<100;$x++) {
 									  $i=$date[year]-$x;
@@ -139,7 +139,7 @@
 									  //$j=$date[year]-$x+543;
 									 ?>
 									<option value="<?=$i?>" <? if($birth_year==$i) echo "selected"; ?>><?=$i?></option>
-								<?
+								<?php
 								  }
 								?>
 								  </select> <font color="FF0000">*</font>

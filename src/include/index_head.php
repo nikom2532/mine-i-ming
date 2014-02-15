@@ -171,7 +171,7 @@ if($menu1 == "profile" || $menu1 == "photo" || $menu1=="calendars"){ ?>
                                 <tr> 
                                   <td valign="top" height="500">
 
-<?
+<?php
 
 //	if not login
 //if(($_SESSION[su]=="")&&($focus!="0")) {

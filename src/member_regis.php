@@ -1,4 +1,4 @@
-<?
+<?php
 $rootpath="";
 session_start();
 require_once($rootpath."lib/DB.php");
@@ -123,7 +123,7 @@ if($flag=="ok") {
 ?>
 
 
-<? // Html below ?>
+<?php // Html below ?>
 
 <html>
 <head>
@@ -155,7 +155,7 @@ body {
         </tr>
       </table></td>
   </tr>
-<? // menu here ?>
+<?php // menu here ?>
   <tr> 
     <td><table width="100%" border="0" cellspacing="0" cellpadding="0">
         <tr> 
@@ -166,7 +166,7 @@ body {
                 <td><table width="98%" border="0" align="center" cellpadding="0" cellspacing="0">
                     <tr> 
                       <td valign="top">
-                      <? // ******************* insite main ******************** ?>
+                      <?php // ******************* insite main ******************** ?>
                       
                       <table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
 
@@ -291,7 +291,7 @@ body {
 	<form action="" method="post" name="regis" onsubmit="return Validator(this)">
 		<input type="hidden" name="flag" value="ok">
 
-<?
+<?php
 include("member_regis_form.php");
 ?>
 </form>
@@ -340,6 +340,6 @@ include("member_regis_form.php");
 </table>                                      
 </body>
 </html>
-<?
+<?php
 //include($rootpath."include/index_bottom.php");
 ?>

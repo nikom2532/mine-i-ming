@@ -1,4 +1,4 @@
-<?
+<?php
 $rootpath="";
 session_start();
 if($_SESSION[su]=="") {
@@ -183,7 +183,7 @@ $msg2="หากต้องการใช้รหัสผ่านเดิ�
 		   </tr><form action="" method="post" name="edit" onsubmit="return Validator(this)">
 					<input type="hidden" name="flag" value="ok">
 		 </table>
-<?
+<?php
 include($rootpath."include/member_regis_form.php");
 ?>
 </form>
@@ -197,6 +197,6 @@ include($rootpath."include/member_regis_form.php");
 	</table></td>
 	</tr>
 </table>
-<?
+<?php
 include($rootpath."include/index_bottom.php");
 ?>

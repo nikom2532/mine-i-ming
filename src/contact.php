@@ -6,7 +6,7 @@
 
 
 <!-- Cancel below !!!-->
-<?
+<?php
 $rootpath ="";
 session_start();
 require_once($rootpath."lib/func_date.php");
@@ -70,7 +70,7 @@ include($rootpath."include/index_head.php");
 
 
 
-<?
+<?php
 include($rootpath."include/index_bottom.php");
 	}	//end check login
 //mysql_close();

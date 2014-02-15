@@ -72,7 +72,7 @@
 
 			 <table width='100%' border='0' cellspacing='0' cellpadding='0'>
 		  <tr>
-	<?
+	<?php
 	if($_SESSION[su]!="") {
 		echo "<td class='nortxt' align='center' width='150'><b>Welcome</b> <img src='".$rootpath."images/arr.gif' width='12' height='8'> <a href='$rootpath' > $_SESSION[su] </a> </td><td class='wlink' align='center' width='200'> <a href='".$rootpath."member_edit.php'>Account/Change password</a> </td><td class='nortxt' align='center' width='80'> <a href='".$rootpath."logout.php'><img src='".$rootpath."images/bu_log2.gif' width='53' height='19' border='0'></a></td>";
 
