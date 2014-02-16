@@ -34,7 +34,7 @@ include($rootpath."include/index_head.php");
     </td>
   </tr>
   <tr class="nortxt"><td>
-  <img src="<?=$rootpath?>images/SSL10858[4-2].jpg" ALT="iMing" width="200" height="177.92869269949066213921901528014" BORDER="0"><br><br></td>
+  <img src="<?php echo $rootpath; ?>images/SSL10858[4-2].jpg" ALT="iMing" width="200" height="177.92869269949066213921901528014" BORDER="0"><br><br></td>
   <td VALIGN="top">
   <Br> Arming Huang
   </td>

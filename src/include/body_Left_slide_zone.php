@@ -7,7 +7,7 @@
 		<table border="0" width="80%" align="center" VALIGN="top" cellpadding="0" cellspacing="0">
 		  <tr style="text-align: left; width: 100%;">
 			<td align="center" width="30%" VALIGN="middle" style="text-align: left; " width="100%">
-				<a href="<?=$rootpath?>main/text/">
+				<a href="<?php echo $rootpath; ?>main/text/">
 <?php
 				// file name Body_Left_Slide.php
 				//show profile photo
@@ -42,14 +42,14 @@
 				
 			</td>
 			<td align="center" width="60%" VALIGN="middle" style="text-align: left; " width="100%">
-				<a href="<?=$rootpath?>main/text/"><?=$own_body?></a>
+				<a href="<?php echo $rootpath; ?>main/text/"><?=$own_body?></a>
 			</td>
 		  </tr>
 		</table>
 		<br />
 
 
-		<img src="<?=$rootpath?>images/HR_line200.png">
+		<img src="<?php echo $rootpath; ?>images/HR_line200.png">
 		</center>
 		<br />
 
@@ -73,7 +73,7 @@
 	<?php					}
 	?>							
 								<span class="menulink">
-									<a href="<?=$rootpath?>main/Top_found/index.php?fn=index" style="display:block;">&emsp;<img src="<?=$rootpath?>images/Top_search_16x16.png" width="16"> Top Found</a>
+									<a href="<?php echo $rootpath; ?>main/Top_found/index.php?fn=index" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/Top_search_16x16.png" width="16"> Top Found</a>
 								</span>
 							</td>
 						</tr>
@@ -87,7 +87,7 @@
 	<?php					}
 	?>							
 								<span class="menulink">
-									<a href="<?=$rootpath?>main/new_zone.php" style="display:block;">&emsp;<img src="<?=$rootpath?>images/my_zone.png"> My zone</a>
+									<a href="<?php echo $rootpath; ?>main/new_zone.php" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/my_zone.png"> My zone</a>
 								</span>
 							</td>
 						</tr>
@@ -114,7 +114,7 @@
 									$count++;
 							}
 ?>								<span class="menulink">
-									<a href="<?=$rootpath?>main/my_messages/index.php?fn=inbox" style="display:block;">&emsp;<img src="<?=$rootpath?>images/message_unread.png" width="16" height="16"> My messages (<?=$count?>)</a>
+									<a href="<?php echo $rootpath; ?>main/my_messages/index.php?fn=inbox" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/message_unread.png" width="16" height="16"> My messages (<?=$count?>)</a>
 									<?php $count=""; ?>
 								</span>
 							</td>
@@ -128,7 +128,7 @@
 	?>							<td align="center" VALIGN="top" style="text-align: left; " width="100%" onMouseOver="this.bgColor='#ddf6ff'" onMouseOut="this.bgColor='#f2fffc'">
 	<?php					}
 	?>							<span class="menulink">
-									<a href="<?=$rootpath?>main/my_calendars/index.php?fn=date" style="display:block;">&emsp;<img src="<?=$rootpath?>images/calendar.png"> My calendars</a>
+									<a href="<?php echo $rootpath; ?>main/my_calendars/index.php?fn=date" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/calendar.png"> My calendars</a>
 								</span>
 							</td>
 						</tr>
@@ -151,7 +151,7 @@
 				<?php					}
 			?>
 											<span class="menulink">
-												<a href="<?=$rootpath?>main/my_calendars/index.php?fn=now" style="display:block;">&emsp;<img src="<?=$rootpath?>images/calendar.png"> Happen This time</a>
+												<a href="<?php echo $rootpath; ?>main/my_calendars/index.php?fn=now" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/calendar.png"> Happen This time</a>
 											</span>
 										</td>
 									</tr>
@@ -175,7 +175,7 @@
 				<?php					}
 			?>
 											<span class="menulink">
-												<a href="<?=$rootpath?>main/my_calendars/index.php?fn=date" style="display:block;">&emsp;<img src="<?=$rootpath?>images/calendar.png"> Activity</a>
+												<a href="<?php echo $rootpath; ?>main/my_calendars/index.php?fn=date" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/calendar.png"> Activity</a>
 											</span>
 										</td>
 									</tr>
@@ -199,7 +199,7 @@
 				<?php					}
 			?>
 											<span class="menulink">
-												<a href="<?=$rootpath?>main/my_calendars/index.php?fn=birthday" style="display:block;">&emsp;<img src="<?=$rootpath?>images/calendar.png"> Birthday</a>
+												<a href="<?php echo $rootpath; ?>main/my_calendars/index.php?fn=birthday" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/calendar.png"> Birthday</a>
 											</span>
 										</td>
 									</tr>
@@ -218,7 +218,7 @@
 	?>							<td align="center" VALIGN="top" style="text-align: left; " width="100%" onMouseOver="this.bgColor='#ddf6ff'" onMouseOut="this.bgColor='#f2fffc'">
 	<?php					}
 	?>							<span class="menulink">
-									<a href="<?=$rootpath?>main/my_groups.php" style="display:block;">&emsp;<img src="<?=$rootpath?>images/comment_many_blue.png"> My tag catalogs</a>
+									<a href="<?php echo $rootpath; ?>main/my_groups.php" style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/comment_many_blue.png"> My tag catalogs</a>
 								</span>
 							</td>
 						</tr>
@@ -226,7 +226,7 @@
 ?>
 						<tr>
 							<td>
-								<center><p><img src="<?=$rootpath?>images/HR_line200.png"></p></center>
+								<center><p><img src="<?php echo $rootpath; ?>images/HR_line200.png"></p></center>
 
 
 
@@ -249,7 +249,7 @@
 	  <!-- ##################### end left Menu #####################-->
 	</td>
     <!--td align="center" width="1%" VALIGN="top" style="text-align: left; " width="100%">
-		<img src="<?=$rootpath?>images/HL_line.png">
+		<img src="<?php echo $rootpath; ?>images/HL_line.png">
 	</td-->
   </tr>
 </table>

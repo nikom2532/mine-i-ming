@@ -19,14 +19,14 @@
 				  if($count_subscriber > 0) //it is subscriber
 				  {
 				?>
-					<a href="<?=$rootpath?>main/text/comment_subscriber.php?&friend=<?php echo $friend; ?>&subscriber=2" onmouseover="window.status=''" onmouseout="window.status=''">untagging</a>
+					<a href="<?php echo $rootpath; ?>main/text/comment_subscriber.php?&friend=<?php echo $friend; ?>&subscriber=2" onmouseover="window.status=''" onmouseout="window.status=''">untagging</a>
 
 				<?php
 				  }
 				  else	//it is not subscriber
 				  {
 				?>
-					<a href="<?=$rootpath?>main/text/comment_subscriber.php?&friend=<?php echo $friend; ?>&subscriber=1" >tagging</a>
+					<a href="<?php echo $rootpath; ?>main/text/comment_subscriber.php?&friend=<?php echo $friend; ?>&subscriber=1" >tagging</a>
 				<?php
 				  }
 				?>

@@ -130,10 +130,10 @@
 ?>
 <?php	if($own_body == $friend && $own_body != $_SESSION[su] && $own_body != "")
 		{
-?>			<br /><a href="<?=$rootpath?>main/my_messages/index.php?friend=<?=$friend?>&fn=new"><img src="<?=$rootpath?>images/message_unread.png">send message</a>
+?>			<br /><a href="<?php echo $rootpath; ?>main/my_messages/index.php?friend=<?=$friend?>&fn=new"><img src="<?php echo $rootpath; ?>images/message_unread.png">send message</a>
 <?php	}
 ?>		<br /><br />
-		<img src="<?=$rootpath?>images/HR_line200.png">
+		<img src="<?php echo $rootpath; ?>images/HR_line200.png">
 		</center>
 		<br />
 	  <!--***** Menu *****-->
@@ -172,13 +172,13 @@
 ?>							<td align="center" VALIGN="top" style="text-align: left; " width="100%"onMouseOver="this.bgColor='#ddf6ff'" onMouseOut="this.bgColor='#f2fffc'">
 <?php					}
 ?>							<span class="menulink">
-								<a href="<?=$rootpath?>main/my_info/
+								<a href="<?php echo $rootpath; ?>main/my_info/
 					<?php 		if($own_body == $friend){
 									echo "?friend=".$friend."\"";
 								}
 								else echo "\"";
 ?>								style="display:block;">
-								&emsp;<img src="<?=$rootpath?>images/comment_blue.gif"> Info</a>
+								&emsp;<img src="<?php echo $rootpath; ?>images/comment_blue.gif"> Info</a>
 							</span>
 						</td>
 					</tr>
@@ -190,20 +190,20 @@
 ?>							<td align="center" VALIGN="top" style="text-align: left; " width="100%"onMouseOver="this.bgColor='#ddf6ff'" onMouseOut="this.bgColor='#f2fffc'">
 <?php					}
 ?>							<span class="menulink">
-								<a href="<?=$rootpath?>main/my_photo/
+								<a href="<?php echo $rootpath; ?>main/my_photo/
 					<?php 		if($own_body == $friend){
 									echo "?friend=".$friend."\"";
 								}
 								else echo "\"";
 ?>								style="display:block;">
-								&emsp;<img src="<?=$rootpath?>images/action_go.gif"> photos</a>
+								&emsp;<img src="<?php echo $rootpath; ?>images/action_go.gif"> photos</a>
 							</span>
 						</td>
 					</tr>
 
 					<tr>
 						<td>
-							<center><p><img src="<?=$rootpath?>images/HR_line200.png"></p></center>
+							<center><p><img src="<?php echo $rootpath; ?>images/HR_line200.png"></p></center>
 						</td>
 					</tr>
 				</table>
@@ -240,12 +240,12 @@
 <?php					}
 ?>						<span class="menulink">
 <?php			 			if($own_body == $friend){
-?>								<a href="<?=$rootpath?>main/my_tagging.php?friend=<?=$friend?>"
+?>								<a href="<?php echo $rootpath; ?>main/my_tagging.php?friend=<?=$friend?>"
 <?php							}
 							elseif($own_body == $_SESSION[su]){
-?>								<a href="<?=$rootpath?>main/my_tagging.php"
+?>								<a href="<?php echo $rootpath; ?>main/my_tagging.php"
 <?php						}
-?>							style="display:block;">&emsp;<img src="<?=$rootpath?>images/comment_blue.gif"> Clock tagging (<?=$return_rows?>)</a>
+?>							style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/comment_blue.gif"> Clock tagging (<?=$return_rows?>)</a>
 						</span>
 						</td>
 					</tr>
@@ -282,7 +282,7 @@
 						$url2 = $rs2[url];
 					}
 ?>					<span class="sky_border_link">
-						<a href="<?=$rootpath?>main/text/?friend=<?=$rs[fnd]?>" style="display: block;">
+						<a href="<?php echo $rootpath; ?>main/text/?friend=<?=$rs[fnd]?>" style="display: block;">
 							<table border="0" width="90%" align="center" VALIGN="middle" cellpadding="0" cellspacing="0">
 								<tr>
 									<td align="left" style="text-align: left; width: 25%">
@@ -301,7 +301,7 @@
 						</a>
 					</span>
 <?php			}
-?>				<center><br><img src="<?=$rootpath?>images/HR_line200.png"></center>
+?>				<center><br><img src="<?php echo $rootpath; ?>images/HR_line200.png"></center>
 
 	 <!-- ########################## title ++ show who tag us --- friends ##########################3-->
 
@@ -329,11 +329,11 @@
 ?>							<td align="center" align="center" VALIGN="top" style="text-align: left; " width="100%" onMouseOver="this.bgColor='#ddf6ff'" onMouseOut="this.bgColor='#f2fffc'">
 <?php					}
 ?>						<span class="menulink">
-							<a href="<?=$rootpath?>main/my_tagger.php
+							<a href="<?php echo $rootpath; ?>main/my_tagger.php
 <?php			 			if($own_body == $friend){
 								echo "?friend=".$friend;
 							}
-?>							"style="display:block;">&emsp;<img src="<?=$rootpath?>images/comment_blue.gif"> Clock tagger (<?=$return_rows?>)</a>
+?>							"style="display:block;">&emsp;<img src="<?php echo $rootpath; ?>images/comment_blue.gif"> Clock tagger (<?=$return_rows?>)</a>
 						</span>
 						</td>
 					</tr>
@@ -369,7 +369,7 @@
 						}
 ?>
 					<span class="sky_border_link">
-						<a href="<?=$rootpath?>main/text/?friend=<?=$rs[username]?>" style="display: block;">
+						<a href="<?php echo $rootpath; ?>main/text/?friend=<?=$rs[username]?>" style="display: block;">
 							<table border="0" width="90%" align="center" VALIGN="top" cellpadding="0" cellspacing="0">	
 								<tr>
 									<td align="center" VALIGN="middle" style="text-align: left; width: 25%;">
@@ -389,7 +389,7 @@
 					</span>
 <?php				}
 ?>
-					<center><p><img src="<?=$rootpath?>images/HR_line200.png"></p></center>
+					<center><p><img src="<?php echo $rootpath; ?>images/HR_line200.png"></p></center>
 
 
 			</td>
@@ -398,7 +398,7 @@
 
 	</td>
     <!--td align="center" width="1%" VALIGN="top" style="text-align: left; " width="100%">
-		<img src="<?=$rootpath?>images/HL_line.png">
+		<img src="<?php echo $rootpath; ?>images/HL_line.png">
 	</td-->
   </tr>
 </table>

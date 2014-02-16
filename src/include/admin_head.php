@@ -13,15 +13,15 @@ body {
 }
 -->
 </style>
-<link href='<?=$rootpath?>css/style.css' rel='stylesheet' type='text/css'>
+<link href='<?php echo $rootpath; ?>css/style.css' rel='stylesheet' type='text/css'>
 </head>
 
-<body bgcolor="000000" background="<?=$rootpath?>images/universe.jpg" bgproperties="fixed">
+<body bgcolor="000000" background="<?php echo $rootpath; ?>images/universe.jpg" bgproperties="fixed">
 <table width='900' border='0' align='center' cellpadding='0' cellspacing='0'>
   <tr>
     <td><table width='100%' border='0' cellspacing='0' cellpadding='0'>
       <tr>
-        <td width="900"><img src="<?=$rootpath?>images/logo.jpg"></td>
+        <td width="900"><img src="<?php echo $rootpath; ?>images/logo.jpg"></td>
       </tr>
       <tr > 
          <td height='30' bgcolor="000000"><table width='100%' border='0' cellspacing='0' cellpadding='0'>
@@ -106,7 +106,7 @@ $arr_link=array($rootpath."admin/index.php",$rootpath."admin/question.php",$root
                       <td valign="top"><table width="99%" border="0" align="center" cellpadding="0" cellspacing="0">
 
                           <tr> 
-                            <td><img src="<?=$rootpath?>images/space.gif" width="10" height="10"></td>
+                            <td><img src="<?php echo $rootpath; ?>images/space.gif" width="10" height="10"></td>
                           </tr>
                           <tr> 
                             <td><table width="100%" border="0" cellpadding="5" cellspacing="0" class="fline" bgcolor="000000">

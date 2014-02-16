@@ -20,15 +20,15 @@ mysql_close();
                   </TABLE></td>
               </tr>
               <tr> 
-                <td height="10"><img src="<?=$rootpath?>images/space.gif" width="8" height="10"></td>
+                <td height="10"><img src="<?php echo $rootpath; ?>images/space.gif" width="8" height="10"></td>
               </tr>
               <tr> 
                 <td> <table width="100%" border="0" cellspacing="0" cellpadding="0">
                     <tr> 
-                      <td background="<?=$rootpath?>images/bo_line.gif"><img src="<?=$rootpath?>images/bo_line.gif" width="53" height="3"></td>
+                      <td background="<?php echo $rootpath; ?>images/bo_line.gif"><img src="<?php echo $rootpath; ?>images/bo_line.gif" width="53" height="3"></td>
                     </tr>
                     <tr> 
-                      <td height="5"><img src="<?=$rootpath?>images/space.gif" width="15" height="5"></td>
+                      <td height="5"><img src="<?php echo $rootpath; ?>images/space.gif" width="15" height="5"></td>
                     </tr>
 
                     <tr> 

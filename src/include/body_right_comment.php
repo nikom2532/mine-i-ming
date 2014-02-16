@@ -1,7 +1,7 @@
 				<table border="0" width="100%" align="center" VALIGN="top" cellpadding="0" cellspacing="0">
 				  <tr style="text-align: left; width: 100%;">
 					<td align="center" width="1%" VALIGN="top" style="text-align: left; " width="100%">
-						<img src="<?=$rootpath?>images/HL_line1000.png">
+						<img src="<?php echo $rootpath; ?>images/HL_line1000.png">
 					</td>
 					<td align="center" width="99%" VALIGN="top" style="text-align: left; " width="100%">
 
@@ -56,7 +56,7 @@
 													<a href="<?php echo $rootpath; ?>comment2.php?friend=<?php echo $rs_comm[username_from]; ?>">	<?php echo $rs_comm[username_from]; ?>	</a>
 												  </td>
 												  <td VALIGN="top" style="text-align: left" width="5%">
-													<img src="<?=$rootpath?>images/arr3.png" width="10" height="10">
+													<img src="<?php echo $rootpath; ?>images/arr3.png" width="10" height="10">
 												  </td>
 												  <!-- show account from -->
 												  <td VALIGN="top" style="text-align: left" width="10%">
