@@ -6,7 +6,7 @@
 		document.getElementById(id).submit();
 	}
 </script>
-<?
+<?php
 	//##################################### initial GET ##############################################
 	$rootpath ="../../";
 	$fn = $_POST["fn"];

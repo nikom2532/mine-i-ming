@@ -1,4 +1,4 @@
-<?
+<?php
 
 //******  form input _POST method  ******
 $username = $_POST[username];
@@ -350,6 +350,6 @@ include($rootpath."include/member_regis_form.php");
 </table>                                      
 </body>
 </html>
-<?
+<?php
 //include($rootpath."include/index_bottom.php");
 ?>

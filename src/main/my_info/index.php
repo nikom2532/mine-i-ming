@@ -1,4 +1,4 @@
-<?
+<?php
 
 $rootpath ="../../";
 session_start();
@@ -253,7 +253,7 @@ $focus=1;
 
 </font>
 
-<?
+<?php
 include($rootpath."include/index_bottom.php");
 mysql_close();
 }	//end check login

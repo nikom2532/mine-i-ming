@@ -345,7 +345,7 @@ body {
 	    <img src="<?=$rootpath?>images/logo v.2.2.jpg">
 	  </a>
     <td width='3'>
-<?
+<?php
 	$arr_text=array("Home","Webboard","comment","Contact");
 	$arr_link=array($rootpath."index.php",$rootpath."webboard.php" ,$rootpath."comment.php",$rootpath."contact.php");
 	$i=0;
@@ -376,7 +376,7 @@ body {
          <td height='30' bgcolor="#b3e6ed">
 		 <table width='100%' border='0' cellspacing='0' cellpadding='0'>
       <tr>
-<?
+<?php
 if($_SESSION[su]!="") {
 	echo "<td class='nortxt' align='center' width='150'><b>Welcome </b> <img src='".$rootpath."images/arr.gif' width='12' height='8'> <a href='.$rootpath'> $_SESSION[su] </a> </td><td class='wlink' align='center' width='200'> <a href='".$rootpath."member_edit.php'>Account/Change password</a> </td><td class='nortxt' align='center' width='80'> <a href='".$rootpath."logout.php'><img src='".$rootpath."images/bu_log2.gif' width='53' height='19' border='0'></a></td>";
 
@@ -450,7 +450,7 @@ if($_SESSION[su]!="") {
 
 
 
-<?
+<?php
 
 //	if not login
 //if(($_SESSION[su]=="")&&($focus!="0")) {

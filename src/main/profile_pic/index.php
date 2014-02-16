@@ -1,4 +1,4 @@
-<?
+<?php
 
 $rootpath ="../../";
 session_start();
@@ -61,7 +61,7 @@ include($rootpath."include/index_head.php");
 </font>
 
 
-<?
+<?php
 include($rootpath."include/index_bottom.php");
 //mysql_close();
 }	//end check login

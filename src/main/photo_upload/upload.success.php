@@ -31,7 +31,7 @@ include($rootpath."include/index_head.php");
 	
 </font>
 
-<?
+<?php
 header("Refresh: 2; URL=\".\"");
 
 

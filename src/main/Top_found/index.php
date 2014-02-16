@@ -27,12 +27,12 @@ $focus=0;
 <font size="3" color="#000000">
 <br>
 
-<? //####################### main #################### ?>
+<?php //####################### main #################### ?>
 <div class="bodytext">
 
 <table border="0" width="100%" align="center" VALIGN="top" cellpadding="0" cellspacing="0">
   <tr>
-	<? //######################### Left slide 1. Profile picture ######################## ?>
+	<?php //######################### Left slide 1. Profile picture ######################## ?>
 	<td align="center" VALIGN="top" width="20%">
 		<?php
 			if($friend != ""){
@@ -42,7 +42,7 @@ $focus=0;
 			include($rootpath."include/body_Left_slide_zone.php");
 		?>
 	</td>
-	<? // ########################## middle sheet ####################### ?>
+	<?php // ########################## middle sheet ####################### ?>
 
 	<?php include($rootpath."main/Top_found/index_BodyInclude.php"); ?>
   </tr>
@@ -53,7 +53,7 @@ $focus=0;
 
 </font>
 
-<?
+<?php
 include($rootpath."include/index_bottom.php");
 mysql_close();
 }	//end check login

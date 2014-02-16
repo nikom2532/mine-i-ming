@@ -1,4 +1,4 @@
-<?
+<?php
 
 $rootpath ="../../";
 session_start();
