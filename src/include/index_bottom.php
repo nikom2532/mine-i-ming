@@ -30,8 +30,8 @@
 						  <span class="grtxt">
                             <br>
 						  <font size="2" color="#666666">
-							Copyright &copy; 2012, by 
-							<a href="http://www.i-ming.com/nikom2532" target="_blank">Arming Huang</a>
+							Copyright &copy; 2011 - 2013, by 
+							<a href="http://arming.i-ming.com/" target="_blank">Arming Huang</a>
 							All rights reserved.
 							<br>
 							i-Ming is a beta version. We will be avalable soon!
